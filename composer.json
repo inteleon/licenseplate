@@ -1,0 +1,48 @@
+{
+    "name": "inteleon/licenseplate",
+    "type": "library",
+    "description": "parse swedish licenseplates",
+    "keywords": [
+        "inteleon",
+        "licenseplate"
+    ],
+    "homepage": "https://github.com/inteleon/licenseplate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Nilsson",
+            "email": "daniel@smspark.se",
+            "role": "Developer"
+        },
+        {
+            "name": "Johan Ivarsson",
+            "email": "johan@smspark.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inteleon\\LicensePlates\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inteleon\\LicensePlates\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
