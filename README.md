@@ -1,9 +1,9 @@
 # inteleon/licenseplate
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Build Status][ico-travis]][link-travis]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
+[![Latest Stable Version](https://poser.pugx.org/inteleon/licenseplate/v/stable)](https://packagist.org/packages/inteleon/licenseplate)
+[![Build Status](https://travis-ci.org/inteleon/licenseplate.svg?branch=master)](https://travis-ci.org/inteleon/licenseplate)
+[![Total Downloads](https://poser.pugx.org/inteleon/licenseplate/downloads)](https://packagist.org/packages/inteleon/licenseplate)
+[![License](https://poser.pugx.org/inteleon/licenseplate/license)](https://packagist.org/packages/inteleon/licenseplate)
 
 Validate and parse vehicle license plates.
 
@@ -51,23 +51,9 @@ If you discover any security related issues, please email :author_email instead 
 
 - [Daniel Nilsson][daniel@smspark.se]
 - [Johan Ivarsson][johan@smspark.se]
-- [All Contributors][link-contributors]
+- [All Contributors][https://github.com/inteleon/licenseplate/graphs/contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/:vendor/inteleon/licenseplate.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/:vendor/inteleon/licenseplate/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/:vendor/inteleon/licenseplate.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/:vendor/inteleon/licenseplate.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/:vendor/inteleon/licenseplate.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/:vendor/inteleon/licenseplate
-[link-travis]: https://travis-ci.org/:vendor/inteleon/licenseplate
-[link-scrutinizer]: https://scrutinizer-ci.com/g/:vendor/inteleon/licenseplate/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/:vendor/inteleon/licenseplate
-[link-downloads]: https://packagist.org/packages/:vendor/inteleon/licenseplate
-[link-author]: https://github.com/:author_username
-[link-contributors]: ../../contributors
