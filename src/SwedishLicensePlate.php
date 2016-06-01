@@ -45,7 +45,7 @@ class SwedishLicensePlate extends LicensePlate
     public function isNormalPlate()
     {
         return (bool) preg_match(
-            '/(\w{3}\s*\d{3})|(\w{3}\s*\d{2}\w)/',
+            '/^((\w{3}\s*\d{3})|(\w{3}\s*\d{2}\w))$/',
             $this->license
         );
     }

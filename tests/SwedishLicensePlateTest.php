@@ -68,6 +68,8 @@ class SwedishLicensePlateTest extends PHPUnit_Framework_TestCase
             ['batman', true],
             ['green lantern', false],
             ['abc 123', false],
+            ['SASA554', true],
+
         ];
     }
 
@@ -99,6 +101,7 @@ class SwedishLicensePlateTest extends PHPUnit_Framework_TestCase
             ['yxz999'],
             ['AAA 12A'],
             ['AAA12A'],
+            ['SASA554'],
         ];
     }
 
