@@ -15,7 +15,7 @@ class SwedishLicensePlate extends LicensePlate
     {
         return $this->isNormalPlate()
         ? $this->formatNormal()
-        : strtoupper($this->license);
+        : mb_strtoupper($this->license, 'utf8');
     }
 
     /**
@@ -25,7 +25,7 @@ class SwedishLicensePlate extends LicensePlate
      */
     private function formatNormal()
     {
-        return strtoupper(str_replace([' ', '\n', '\t'], '', $this->license));
+        return mb_strtoupper(str_replace([' ', '\n', '\t'], '', $this->license), 'utf8');
     }
 
     /**
@@ -56,7 +56,7 @@ class SwedishLicensePlate extends LicensePlate
     public function isPersonalPlate()
     {
         $p = (bool) preg_match(
-            '/^[a-z0-9 ]{2,7}$/i',
+            '/^[a-zåäö0-9 ]{2,7}$/ui',
             $this->license
         );
         return $p && !$this->isNormalPlate();

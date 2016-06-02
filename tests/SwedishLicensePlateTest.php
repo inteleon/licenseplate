@@ -19,7 +19,9 @@ class SwedishLicensePlateTest extends PHPUnit_Framework_TestCase
             ['xyz123', 'XYZ123'],
             ['abc 123', 'ABC123'],
             ['batman', 'BATMAN'],
-            ['foo bar', 'FOO BAR']
+            ['foo bar', 'FOO BAR'],
+            ['foo åäö', 'FOO ÅÄÖ'],
+
         ];
     }
 
@@ -69,7 +71,7 @@ class SwedishLicensePlateTest extends PHPUnit_Framework_TestCase
             ['green lantern', false],
             ['abc 123', false],
             ['SASA554', true],
-
+            ['mäklare', true],
         ];
     }
 
@@ -88,7 +90,7 @@ class SwedishLicensePlateTest extends PHPUnit_Framework_TestCase
         );
     }
 
-    public function isValidLicenesPlateProvider()
+    public function isValidLicensePlateProvider()
     {
         return [
             ['aa'],
@@ -102,12 +104,13 @@ class SwedishLicensePlateTest extends PHPUnit_Framework_TestCase
             ['AAA 12A'],
             ['AAA12A'],
             ['SASA554'],
+            ['MÄKLARE'],
         ];
     }
 
     /**
      * @test
-     * @dataProvider isValidLicenesPlateProvider
+     * @dataProvider isValidLicensePlateProvider
      * @param string $license
      */
     public function isValid($license)
